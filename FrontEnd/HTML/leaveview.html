@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Details</title>
+    <script src="../js/viewleave.js"></script>
+    <script src="../js/admin.js"></script>
+    <link rel="stylesheet" href="../css/salaryview.css">
+</head>
+<body>
+    <h2>Employee Leave Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>From Date</th>
+                <th>To Date</th>
+                <th>Leave Type</th>
+                <th>Leave Salary</th>
+                <th>No. of Days</th>
+                <th>One Day Salary</th>
+            </tr>
+        </thead>
+        <tbody id="leaveDetails"> 
+        </tbody>
+    </table>
+    <button id="viewAllButton" onclick="displayLeaveDetails()">View All</button>
+    <button id="filterByIdButton">Filter by Employee ID</button>
+    <button id="filterByDateButton">Filter by Date Range</button>
+    <button type="button" onclick="viewRedirect()">back</button>
+    <div id="employeeIdInput" style="display: none;">
+        Employee ID: <input type="text" id="empId">
+        <button id="filterByIdSubmitButton">Filter</button>
+    </div>
+    <div id="dateRangeInput" style="display: none;">
+        From Date: <input type="date" id="fromDate">
+        To Date: <input type="date" id="toDate">
+        <button id="filterByDateSubmitButton">Filter</button>
+    </div>
+</body>
+</html>

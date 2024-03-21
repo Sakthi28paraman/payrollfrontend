@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/salaryview.css">
+    <script src="../js/admin.js"></script>
+</head>
+<body>
+    <h2>Employee Salary Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Month</th>
+                <th>Year</th>
+                <th>HRA</th>
+                <th>Conveyance</th>
+                <th>PF</th>
+                <th>ESI</th>
+                <th>Profession Tax</th>
+                <th>TSDIT</th>
+                <th>Total Earning</th>
+                <th>Total Deduction</th>
+                <th>Net Salary</th>
+            </tr>
+        </thead>
+        <tbody id="salaryDetails"> 
+        </tbody>
+    </table>
+    <button onclick="displaySalaryDetails()">View All</button>
+    <button id="sortByIdButton">Sort by employee id</button>
+    <button id="sortByMonthYearButton">Sort by Month and year</button>
+    <button type="button" onclick="viewRedirect()">back</button>
+    <div id="employeeIdInput" style="display: none;">
+        Employee ID: <input type="text" id="empId">
+        <button id="filterByIdButton">Filter</button>
+    </div>
+    <div id="monthYearInput" style="display: none;">
+        Month: <input type="text" id="month">
+        Year: <input type="text" id="year">
+        <button id="filterByMonthYearButton">Filter</button>
+    </div>
+
+    <script src="../js/viewsalary.js"></script>
+</body>
+</html>

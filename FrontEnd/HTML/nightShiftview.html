@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Shift Details</title>
+    <script src="../js/viewnytshift.js"></script>
+    <link rel="stylesheet" href="../css/salaryview.css">
+    <script src="../js/admin.js"></script>
+</head>
+<body>
+    <h2>Night Shift Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Night Shift ID</th>
+                <th>Employee ID</th>
+                <th>Night Shift Date</th>
+                <th>Night Shift Amount</th>
+                <th>Night Shift Salary</th>
+                <th>No. of Days</th>
+            </tr>
+        </thead>
+        <tbody id="nightShiftDetails"> 
+        </tbody>
+    </table>
+    <button id="viewAllButton" onclick="displayNightShiftDetails()">View All</button>
+    <button id="filterByIdButton">Filter by Employee ID</button>
+    <button id="filterByDateButton">Filter by Date</button>
+    <button type="button" onclick="viewRedirect()">back</button>
+    <div id="employeeIdInput" style="display: none;">
+        Employee ID: <input type="text" id="empId">
+        <button id="filterByIdSubmitButton">Filter</button>
+    </div>
+    <div id="dateInput" style="display: none;">
+        Date: <input type="date" id="shiftDate">
+        <button id="filterByDateSubmitButton">Filter</button>
+    </div>
+</body>
+</html>
